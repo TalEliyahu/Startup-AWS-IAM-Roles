@@ -1,0 +1,69 @@
+{
+  "Version": "2012-10-17",
+  "Statement": [
+{
+      "Sid": "Stmt1502902671383",
+      "Action": [
+        "workdocs:ActivateUser",
+        "workdocs:AddUserToGroup",
+        "workdocs:CheckAlias",
+        "workdocs:CreateInstance",
+        "workdocs:DeactivateUser",
+        "workdocs:DeregisterDirectory",
+        "workdocs:DescribeAvailableDirectories",
+        "workdocs:DescribeInstances",
+        "workdocs:RegisterDirectory",
+        "workdocs:UpdateInstanceAlias"
+      ],
+      "Effect": "Allow",
+      "Resource": "*"
+    },
+    {
+      "Sid": "Stmt1502902778359",
+      "Action": [
+        "workmail:AddMembersToGroup",
+        "workmail:CreateGroup",
+        "workmail:CreateMailDomain",
+        "workmail:CreateMailUser",
+        "workmail:CreateOrganization",
+        "workmail:DescribeDirectories",
+        "workmail:DescribeKmsKeys",
+        "workmail:DescribeOrganizations",
+        "workmail:DescribeMailDomains",
+        "workmail:DescribeMailGroups",
+        "workmail:DescribeMailUsers",
+        "workmail:EnableMailDomain",
+        "workmail:EnableMailUsers",
+        "workmail:EnableMailGroups",
+        "workmail:GetMailDomainDetails",
+        "workmail:GetMailGroupDetails",
+        "workmail:GetMailUserDetails",
+        "workmail:GetMobileDeviceDetails",
+        "workmail:GetMobileDevicesForUser",
+        "workmail:GetMobilePolicyDetails",
+        "workmail:ListMembersInMailGroup",
+        "workmail:RemoveMembersFromGroup",
+        "workmail:SearchMembers",
+        "workmail:SetDefaultMailDomain",
+        "workmail:SetMailGroupDetails",
+        "workmail:SetMailUserDetails",
+        "workmail:SetMobilePolicyDetails",
+        "workmail:WipeMobileDevice"
+      ],
+      "Effect": "Allow",
+      "Resource": "*"
+    },
+    {
+      "Sid": "Stmt1502901503281",
+      "Action": "rds:*",
+      "Effect": "Allow",
+      "Resource": "*"
+    },
+    {
+      "Sid": "Stmt1502901539657",
+      "Action": "dynamodb:*",
+      "Effect": "Allow",
+      "Resource": "*"
+    }
+  ]
+}
