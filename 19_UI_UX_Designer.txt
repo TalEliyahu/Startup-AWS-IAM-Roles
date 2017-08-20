@@ -1,9 +1,1 @@
-{
-  "Version": "2012-10-17",
-  "Statement": [
-      "Action": "",
-      "Effect": "Allow",
-      "Resource": "*"
-    }
-  ]
-}
+Doesnt need any access from AWS.

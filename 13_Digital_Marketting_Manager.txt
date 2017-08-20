@@ -1,1 +1,1 @@
-13_
+Doesnt need any access from AWS. He is more focused on tools like Google analytics.
