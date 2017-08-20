@@ -21,7 +21,7 @@
         "kms:*",
         "elasticbeanstalk:*",
         "cognito:*",
-        "xray:
+        "xray:*"
       ],
       "Effect": "Allow",
       "Resource": "*",
