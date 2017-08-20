@@ -1,0 +1,27 @@
+{
+  "Version": "2012-10-17",
+  "Statement": [
+    {
+      "Sid": "Stmt1502899592607",
+      "Action": [
+        "rds:*",
+        "redshift:*",
+        "s3:*",
+        "dynamodb:*",
+        "kinesis:*",
+        "elasticmapreduce:*",
+        "datapipeline:*",
+        "sdb:*"
+        "sns:*"
+        "sqs:*"
+      ],
+      "Effect": "Allow",
+      "Resource": "*",
+      "Condition": {
+        "IpAddress": {
+          "aws:SourceIp": "workplace_ip_address_here"
+        }
+      }
+    }
+  ]
+}
