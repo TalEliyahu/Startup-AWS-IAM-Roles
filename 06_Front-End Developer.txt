@@ -1,20 +1,15 @@
 {
   "Version": "2012-10-17",
   "Statement": [
-    {
+   {
       "Sid": "Stmt1502899592607",
       "Action": [
-        "rds:*",
-        "redshift:*",
         "s3:*",
-        "dynamodb:*",
-        "kinesis:*",
-        "elasticmapreduce:*",
-        "datapipeline:*",
-        "sdb:*",
         "sns:*",
         "sqs:*",
-        "logs:*",
+        "cloudfront:*",
+        "route53:*",
+        "logs:*"
       ],
       "Effect": "Allow",
       "Resource": "*",

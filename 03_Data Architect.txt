@@ -11,9 +11,11 @@
         "kinesis:*",
         "elasticmapreduce:*",
         "datapipeline:*",
-        "sdb:*"
-        "sns:*"
-        "sqs:*"
+        "sdb:*",
+        "sns:*",
+        "sqs:*",
+        "logs:*",
+        "xray:*"
       ],
       "Effect": "Allow",
       "Resource": "*",
