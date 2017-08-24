@@ -12,9 +12,17 @@
 
 **Marketing:**  Mixpanel, Google Analytics
 
+**Code Repository:** Github / Bitbucket / Gitlab (Instead of AWS services)
+
 **Database:**
 
-\*No one will have IAM access unless he is architect or above
+
+
+
+
+
+\*No one will have IAM access unless he is architect or above.
+Pipelines will be used from the code repository. (Either Bitbucket pipelines or Gitlab Pipelines) (Instead of AWS services)
 
 **Role 1:  Business Owner**
 
