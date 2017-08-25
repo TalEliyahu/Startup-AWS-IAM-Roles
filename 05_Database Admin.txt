@@ -14,7 +14,7 @@
         "cloudsearch:*",
         "es:*",
         "logs:*",
-        "xray:*"
+        "xray:*",
       ],
       "Effect": "Allow",
       "Resource": "*",

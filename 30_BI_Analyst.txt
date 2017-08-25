@@ -11,7 +11,8 @@
         "s3:*",
         "dynamodb:*",
         "redshift:*",
-        "quicksight:*"
+        "quicksight:*",
+        "athena:*"
       ],
       "Effect": "Allow",
       "Resource": "*",

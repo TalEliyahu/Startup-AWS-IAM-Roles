@@ -15,6 +15,7 @@
         "sns:*",
         "sqs:*",
         "logs:*",
+        "athena:*"
       ],
       "Effect": "Allow",
       "Resource": "*",

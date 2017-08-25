@@ -15,7 +15,8 @@
         "sns:*",
         "sqs:*",
         "logs:*",
-        "xray:*"
+        "xray:*",
+        "athena:*"
       ],
       "Effect": "Allow",
       "Resource": "*",
