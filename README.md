@@ -2,12 +2,12 @@
 
 ## Motivation
 
-A lot of startups are now setting up on aws infrastructure and its long before they figure out importance of IAM role, to be fair its of least importance initially because its not worth the time and energy, businesses initially should focus on product itself. But what if there was hand holding and it won't take too much time to setup IAM roles. After all you want to be secure in initial phases. Forget startups even midsize and some large companies make this mistake and later it becomes too much tech debt.
+Many startups are now setting up on aws infrastructure and its long before they figure out importance of IAM role, to be fair its of least importance initially because its not worth the time and energy, businesses initially should focus on product itself. But what if there was hand holding and it won't take too much time to setup IAM roles. After all you want to be secure in initial phases. Forget startups even midsize and some large companies make this mistake and later it becomes too much tech debt.
 
 This project focuses on creating skeleton of IAM Roles for startups with which they can get started with little or no modifications. The project focuses on multi size startups.
 
 - Small - 5 people
-- midsize - 12 people
+- Midsize - 12 people
 - Large - 40 or above
 
 ## Role of security
