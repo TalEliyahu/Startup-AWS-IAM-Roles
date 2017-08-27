@@ -15,6 +15,7 @@
         "sns:*",
         "sqs:*",
         "logs:*",
+        "xray:*",
         "athena:*"
       ],
       "Effect": "Allow",
@@ -27,6 +28,14 @@
           "aws:MultiFactorAuthAge":"false"
         }
       }
+    },
+    {
+      "Sid": "Stmt1503848150235",
+      "Action": [
+        "s3:DeleteBucket"
+      ],
+      "Effect": "Deny",
+      "Resource": "*"
     }
   ]
 }

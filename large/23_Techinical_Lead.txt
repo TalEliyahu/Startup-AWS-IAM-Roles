@@ -33,6 +33,31 @@
           "aws:MultiFactorAuthAge":"false"
         }
       }
+    },
+    {
+      "Sid": "Stmt1503848219285",
+      "Action": [
+        "rds:DeleteDBCluster",
+        "rds:DeleteDBInstance"
+      ],
+      "Effect": "Deny",
+      "Resource": "*"
+    },
+    {
+      "Sid": "Stmt1503848358153",
+      "Action": [
+        "elasticloadbalancing:DeleteLoadBalancer"
+      ],
+      "Effect": "Deny",
+      "Resource": "*"
+    },
+    {
+      "Sid": "Stmt1503848656361",
+      "Action": [
+        "cloudfront:DeleteDistribution"
+      ],
+      "Effect": "Deny",
+      "Resource": "*"
     }
   ]
 }
