@@ -23,13 +23,16 @@
         "cognito:*",
         "cloudfront:*",
         "route53:*",
-        "xray:*"        
+        "xray:*"
       ],
       "Effect": "Allow",
       "Resource": "*",
       "Condition": {
         "IpAddress": {
           "aws:SourceIp": "workplace_ip_address_here"
+        },
+        "Null": {
+          "aws:MultiFactorAuthAge":"false"
         }
       }
     }
