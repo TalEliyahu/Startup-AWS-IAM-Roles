@@ -1,27 +1,20 @@
 {
   "Version": "2012-10-17",
   "Statement": [
-   {
+    {
       "Sid": "Stmt1502899592607",
       "Action": [
-        "s3:*",
-        "sns:*",
-        "sqs:*",
-        "cloudfront:*",
-        "ec2:*",
-        "lambda:*",
         "rds:*",
+        "redshift:*",
         "s3:*",
         "dynamodb:*",
+        "sdb:*",
+        "sns:*",
+        "sqs:*",
         "cloudsearch:*",
         "es:*",
         "logs:*",
-        "apigateway:*",
-        "cloudtrail:*",
-        "kms:*",
-        "elasticbeanstalk:*",
-        "cognito:*",
-        "xray:*"
+        "xray:*",
       ],
       "Effect": "Allow",
       "Resource": "*",
@@ -33,6 +26,14 @@
           "aws:MultiFactorAuthAge":"false"
         }
       }
+    },
+    {
+      "Sid": "Stmt1503848150235",
+      "Action": [
+        "s3:DeleteBucket"
+      ],
+      "Effect": "Deny",
+      "Resource": "*"
     }
   ]
 }

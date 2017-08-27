@@ -1,0 +1,101 @@
+{
+  "Version": "2012-10-17",
+  "Statement": [
+   {
+      "Sid": "Stmt1502899592607",
+      "Action": [
+        "s3:*",
+        "sns:*",
+        "sqs:*",
+        "cloudfront:*",
+        "ec2:*",
+        "lambda:*",
+        "rds:*",
+        "s3:*",
+        "dynamodb:*",
+        "cloudsearch:*",
+        "es:*",
+        "logs:*",
+        "apigateway:*",
+        "cloudtrail:*",
+        "kms:*",
+        "elasticbeanstalk:*",
+        "cognito:*",
+        "cloudfront:*",
+        "route53:*",
+        "xray:*"
+      ],
+      "Effect": "Allow",
+      "Resource": "*",
+      "Condition": {
+        "IpAddress": {
+          "aws:SourceIp": "workplace_ip_address_here"
+        },
+        "Null": {
+          "aws:MultiFactorAuthAge":"false"
+        }
+      }
+    },
+    ,
+    {
+      "Sid": "Stmt1503848125323",
+      "Action": [
+        "ec2:StopInstances",
+        "ec2:TerminateInstances"
+      ],
+      "Effect": "Deny",
+      "Resource": "*"
+    },
+    {
+      "Sid": "Stmt1503848150235",
+      "Action": [
+        "s3:DeleteBucket"
+      ],
+      "Effect": "Deny",
+      "Resource": "*"
+    },
+    {
+      "Sid": "Stmt1503848183508",
+      "Action": [
+        "lambda:DeleteFunction"
+      ],
+      "Effect": "Deny",
+      "Resource": "*"
+    },
+    {
+      "Sid": "Stmt1503848219285",
+      "Action": [
+        "rds:DeleteDBCluster",
+        "rds:DeleteDBInstance"
+      ],
+      "Effect": "Deny",
+      "Resource": "*"
+    },
+    {
+      "Sid": "Stmt1503848358153",
+      "Action": [
+        "elasticloadbalancing:DeleteLoadBalancer"
+      ],
+      "Effect": "Deny",
+      "Resource": "*"
+    },
+    {
+      "Sid": "Stmt1503848581042",
+      "Action": [
+        "route53:DeleteHealthCheck",
+        "route53:DeleteHostedZone",
+        "route53:DeleteTrafficPolicy"
+      ],
+      "Effect": "Deny",
+      "Resource": "*"
+    },
+    {
+      "Sid": "Stmt1503848656361",
+      "Action": [
+        "cloudfront:DeleteDistribution"
+      ],
+      "Effect": "Deny",
+      "Resource": "*"
+    }
+  ]
+}

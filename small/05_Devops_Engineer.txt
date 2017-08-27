@@ -1,0 +1,19 @@
+{
+  "Version": "2012-10-17",
+  "Statement": [
+    {
+      "Sid": "Stmt1502902212539",
+      "Action": "*",
+      "Effect": "Allow",
+      "Resource": "*",
+      "Condition": {
+        "IpAddress": {
+          "aws:SourceIp": "workplace_ip_address_here"
+        },
+        "Null": {
+          "aws:MultiFactorAuthAge":"false"
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,24 @@
+{
+  "Version": "2012-10-17",
+  "Statement": [
+    {
+      "Sid": "Stmt1503849547380",
+      "Action": [
+        "trustedadvisor:*",
+        "cloudtrail:*",
+        "budgets:*",
+        "aws-portal:*"
+      ]
+      "Effect": "Allow",
+      "Resource": "*",
+      "Condition": {
+        "IpAddress": {
+          "aws:SourceIp": "workplace_ip_address_here"
+        },
+        "Null": {
+          "aws:MultiFactorAuthAge":"false"
+        }
+      }
+    }
+  ]
+}
