@@ -1,4 +1,4 @@
-# IAM Roles for startups
+# IAM Roles for Startups
 
 ## Motivation
 
