@@ -1,4 +1,4 @@
-# A Typical Business organisation
+# A Typical Business Organisation
 
 **There is a presumption that our startup is using the following:**
 
