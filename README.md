@@ -1,8 +1,6 @@
-# IAM Roles for Startups | Follow us on [![alt text][2.1]][2]
+# IAM Roles for Startups 
 
 
-[2.1]: http://i.imgur.com/P3YfQoD.png 
-[2]: http://www.facebook.com/SingaporeTechEntrepreneurs/
 
 ## Motivation
 
@@ -13,6 +11,11 @@ This project focuses on creating a skeleton of IAM roles for startups, with the 
 - Small - 5 people
 - Midsize - ~12 people
 - Large - 40 or above
+
+Follow Us On [![alt text][2.1]][2]
+
+[2.1]: http://i.imgur.com/P3YfQoD.png 
+[2]: http://www.facebook.com/SingaporeTechEntrepreneurs/
 
 ## Role of Security
 
