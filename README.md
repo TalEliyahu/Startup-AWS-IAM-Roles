@@ -1,4 +1,8 @@
-# IAM Roles for Startups
+# IAM Roles for Startups | Follow us on [![alt text][2.1]][2]
+
+
+[2.1]: http://i.imgur.com/P3YfQoD.png 
+[2]: http://www.facebook.com/SingaporeTechEntrepreneurs/
 
 ## Motivation
 
