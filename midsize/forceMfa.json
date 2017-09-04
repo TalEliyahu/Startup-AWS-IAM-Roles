@@ -1,0 +1,97 @@
+{
+    "Version": "2012-10-17",
+    "Statement": [
+        {
+            "Action": "sts:AssumeRole",
+            "Resource": "*",
+            "Effect": "Allow",
+            "Sid": "AllowAllUsersToAssumeRole"
+        },
+        {
+            "Action": [
+                "iam:ListAccountAliases",
+                "iam:ListUsers",
+                "iam:GetAccountSummary"
+            ],
+            "Resource": "*",
+            "Effect": "Allow",
+            "Sid": "AllowAllUsersToListAccounts"
+        },
+        {
+            "Action": [
+                "iam:ChangePassword",
+                "iam:CreateAccessKey",
+                "iam:CreateLoginProfile",
+                "iam:DeleteAccessKey",
+                "iam:DeleteLoginProfile",
+                "iam:GetAccountPasswordPolicy",
+                "iam:GetLoginProfile",
+                "iam:ListAccessKeys",
+                "iam:UpdateAccessKey",
+                "iam:UpdateLoginProfile",
+                "iam:ListSigningCertificates",
+                "iam:DeleteSigningCertificate",
+                "iam:UpdateSigningCertificate",
+                "iam:UploadSigningCertificate",
+                "iam:ListSSHPublicKeys",
+                "iam:GetSSHPublicKey",
+                "iam:DeleteSSHPublicKey",
+                "iam:UpdateSSHPublicKey",
+                "iam:UploadSSHPublicKey"
+            ],
+            "Resource": "arn:aws:iam::962749322167:user/${aws:username}",
+            "Effect": "Allow",
+            "Sid": "AllowIndividualUserToSeeAndManageTheirOwnAccountInformation"
+        },
+        {
+            "Action": [
+                "iam:ListVirtualMFADevices",
+                "iam:ListMFADevices"
+            ],
+            "Resource": [
+                "arn:aws:iam::962749322167:mfa/*",
+                "arn:aws:iam::962749322167:user/${aws:username}"
+            ],
+            "Effect": "Allow",
+            "Sid": "AllowIndividualUserToListTheirOwnMFA"
+        },
+        {
+            "Action": [
+                "iam:CreateVirtualMFADevice",
+                "iam:DeactivateMFADevice",
+                "iam:DeleteVirtualMFADevice",
+                "iam:RequestSmsMfaRegistration",
+                "iam:FinalizeSmsMfaRegistration",
+                "iam:EnableMFADevice",
+                "iam:ResyncMFADevice"
+            ],
+            "Resource": [
+                "arn:aws:iam::962749322167:mfa/${aws:username}",
+                "arn:aws:iam::962749322167:user/${aws:username}"
+            ],
+            "Effect": "Allow",
+            "Sid": "AllowIndividualUserToManageTheirOwnMFA"
+        },
+        {
+            "Condition": {
+                "BoolIfExists": {
+                    "aws:MultiFactorAuthPresent": "false"
+                }
+            },
+            "Resource": "*",
+            "Effect": "Deny",
+            "NotAction": [
+                "iam:*",
+                "sts:AssumeRole",
+                "codecommit:*",
+                "kms:Encrypt",
+                "kms:Decrypt",
+                "kms:ReEncrypt",
+                "kms:GenerateDataKey",
+                "kms:GenerateDataKeyWithoutPlaintext",
+                "kms:DescribeKey"
+            ],
+            "Sid": "BlockAnyAccessOtherThanAboveUnlessSignedInWithMFA"
+        }
+    ]
+}
