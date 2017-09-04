@@ -19,7 +19,7 @@ Follow Us On [![alt text][2.1]][2]
 
 ## Role of Security
 
-In this project, we try to place security above everything. We are trying to avoid accidental deletions. We are assuming that every team member will log in from known IPs. As an added layer of security, we are making MFA mandatory for every user that logs in, even admins. To add the mandatory MFA, there is a policy called "forceMfa.json" that will need to be created and added to a group called FORCE_MFA. Each IAM user to be created, will need to be a part of the FORCE_MFA group. This policy will deny IAM user's access to AWS resources until they add their MFA and use it to authenticate.
+In this project, we try to place security above everything. We are trying to avoid accidental deletions. We are assuming that every team member will log in from known IPs. As an added layer of security, we are making MFA mandatory for every user that logs in, even admins. To add the mandatory MFA, there is a policy called ```forceMfa.json``` that will need to be created and added to a group called ```FORCE_MFA```. Each IAM user to be created, will need to be a part of the ```FORCE_MFA``` group. This policy will deny IAM user's access to AWS resources until they add their MFA and use it to authenticate.
 
 ## Assumptions
 
