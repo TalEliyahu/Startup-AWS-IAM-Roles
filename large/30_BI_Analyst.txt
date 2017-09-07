@@ -19,9 +19,6 @@
       "Condition": {
         "IpAddress": {
           "aws:SourceIp": "workplace_ip_address_here"
-        },
-        "Null": {
-          "aws:MultiFactorAuthAge":"false"
         }
       }
     }
