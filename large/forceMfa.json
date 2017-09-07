@@ -39,7 +39,7 @@
                 "iam:UpdateSSHPublicKey",
                 "iam:UploadSSHPublicKey"
             ],
-            "Resource": "arn:aws:iam::962749322167:user/${aws:username}",
+            "Resource": "arn:aws:iam::YOUR-ACCOUNT-ID:user/${aws:username}",
             "Effect": "Allow",
             "Sid": "AllowIndividualUserToSeeAndManageTheirOwnAccountInformation"
         },
@@ -49,8 +49,8 @@
                 "iam:ListMFADevices"
             ],
             "Resource": [
-                "arn:aws:iam::962749322167:mfa/*",
-                "arn:aws:iam::962749322167:user/${aws:username}"
+                "arn:aws:iam::YOUR-ACCOUNT-ID:mfa/*",
+                "arn:aws:iam::YOUR-ACCOUNT-ID:user/${aws:username}"
             ],
             "Effect": "Allow",
             "Sid": "AllowIndividualUserToListTheirOwnMFA"
@@ -66,8 +66,8 @@
                 "iam:ResyncMFADevice"
             ],
             "Resource": [
-                "arn:aws:iam::962749322167:mfa/${aws:username}",
-                "arn:aws:iam::962749322167:user/${aws:username}"
+                "arn:aws:iam::YOUR-ACCOUNT-ID:mfa/${aws:username}",
+                "arn:aws:iam::YOUR-ACCOUNT-ID:user/${aws:username}"
             ],
             "Effect": "Allow",
             "Sid": "AllowIndividualUserToManageTheirOwnMFA"
