@@ -19,7 +19,7 @@ Follow Us On [![alt text][2.1]][2]
 
 ## Role of Security
 
-In this project, we try to place security above everything. We are deny'ing deletions in our policies to stop avoid accidental deletions. As an added layer of security, we are making MFA mandatory for every user that logs in, even admins. If anybody logs in without an MFA, the only permissions they will have is to turn on their MFA.
+In this project, we try to place security above everything. We are placing deny on deletions in our policies to stop avoid accidental deletions (this can be changed by the company owner at their own discretion). As an added layer of security, we are making MFA mandatory for every user that logs in, even admins. If anybody logs in without an MFA, the only permissions they will have is to turn on their MFA.
 
 ## Assumptions
 
