@@ -6,7 +6,7 @@
 
 Many startups are now using AWS infrastructure for their company, but being new to AWS, they are unaware of the importance of IAM ROLES. It's hard to remember the importance of your permissions structure when you're just starting out. Our goal is to provide the initial hand holding for the business owner with setting up IAM Roles with basic templates to expedite the process of moving you to AWS. After all, security is of utmost importance, especially starting out. Not starting with the right structure is going to cause accumulation of technical debt.
 
-This project focuses on creating a skeleton of IAM roles for startups or any company moving to AWS. This provides the company with the ability to get started with little or no modifications. The project focuses on multi-size startup companies:
+This project focuses on creating a skeleton of IAM roles for startups or any company moving to AWS. This provides the company with the ability to get started with little or no modifications. For new companies (and even old companies), time is money. The less time you need to spend setting up permissions structures in AWS, the more money you have to build your company in other ways. We are here to help. The project focuses on multi-size startup companies:
 
 - Small - 5 people
 - Midsize - ~12 people
