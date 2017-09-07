@@ -19,20 +19,21 @@
         "apigateway:*",
         "cloudtrail:*",
         "kms:*",
+        "elasticloadbalancing:*",
         "elasticbeanstalk:*",
+        "sts:*",
+        "ses:*",
         "cognito:*",
         "cloudfront:*",
         "route53:*",
-        "xray:*"
+        "xray:*",
+        "states:*"
       ],
       "Effect": "Allow",
       "Resource": "*",
       "Condition": {
         "IpAddress": {
           "aws:SourceIp": "workplace_ip_address_here"
-        },
-        "Null": {
-          "aws:MultiFactorAuthAge":"false"
         }
       }
     },

@@ -9,16 +9,23 @@
         "sqs:*",
         "cloudfront:*",
         "route53:*",
-        "logs:*"
+        "logs:*",
+        "athena:*",
+        "cloudsearch:*",
+        "elasticloadbalancing:*",
+        "elasticbeanstalk:*",
+        "kinesis:*",
+        "lambda:*",
+        "sts:*",
+        "ses:*",
+        "kms:*",
+        "xray:*"
       ],
       "Effect": "Allow",
       "Resource": "*",
       "Condition": {
         "IpAddress": {
           "aws:SourceIp": "workplace_ip_address_here"
-        },
-        "Null": {
-          "aws:MultiFactorAuthAge":"false"
         }
       }
     },

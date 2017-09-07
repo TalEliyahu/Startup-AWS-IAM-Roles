@@ -5,18 +5,19 @@
       "Sid": "Stmt1503849547380",
       "Action": [
         "trustedadvisor:*",
-        "cloudtrail:*",
+        "cloudtrail:Get*",
+        "cloudtrail:LookupEvents",
+        "cloudtrail:Describe*",
+        "s3:Get*"
         "budgets:*",
-        "aws-portal:*"
+        "aws-portal:*",
+        "cur:*"
       ]
       "Effect": "Allow",
       "Resource": "*",
       "Condition": {
         "IpAddress": {
           "aws:SourceIp": "workplace_ip_address_here"
-        },
-        "Null": {
-          "aws:MultiFactorAuthAge":"false"
         }
       }
     }
