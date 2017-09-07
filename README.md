@@ -40,9 +40,12 @@ read [ROLES.md](https://github.com/Singapore-Tech-Entrepreneurs/Startup-AWS-IAM-
 
 ## Setting Up Roles
 
-- Create IAM Policies for each Job Type
-- Create IAM Groups for each Job Type with respective IAM Policiy attached
-- Add users to IAM groups based on their position
+For reach role that you are going to use, follow these steps:
+
+- Open the IAM Console in your AWS Account.
+- Click Policies and then Create Policy.
+- Click Groups and Create Groups. For the attached policy, choose the policy created above.
+- Click on the group you just made, and hit Add Users To Group. Add all users that fit this group.
 - ALL users need added to the FORCE_MFA group which has the FORCE_MFA policy attached.
 
 ## Contributing
@@ -57,6 +60,7 @@ read [ROLES.md](https://github.com/Singapore-Tech-Entrepreneurs/Startup-AWS-IAM-
 
 ## Contributors
 
+- Anthony Petecca @RealityShift
 - Padmakar Ojha @dvopsway
 - Michael Amurjuev @LawTech Enthusiast
 - Kj Venky @kjvenky
