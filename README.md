@@ -57,6 +57,7 @@ read [ROLES.md](https://github.com/Singapore-Tech-Entrepreneurs/Startup-AWS-IAM-
 
 ## Contributors
 
+- Anthony Petecca @RealityShift
 - Padmakar Ojha @dvopsway
 - Michael Amurjuev @LawTech Enthusiast
 - Kj Venky @kjvenky
