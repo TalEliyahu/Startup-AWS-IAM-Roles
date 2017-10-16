@@ -4,7 +4,7 @@
 
 ## 10,000 Foot Overview
 
-In our diagram, we show a demo of how we suggest the infrastructure could be made for a small startup. In this diagram, everything is cloud based whether it's managed by the startup or 3rd party. The IAM roles you see are examples of how IAM roles would fit into this infrastructure but keep in mind, they would only be able to support AWS resources.
+In our [diagram](https://github.com/RealityShift/Startup-AWS-IAM-Roles/blob/master/small/Small.png), we show a demo of how we suggest the infrastructure could be made for a small startup. In this diagram, everything is cloud based whether it's managed by the startup or 3rd party. The IAM roles you see are examples of how IAM roles would fit into this infrastructure but keep in mind, they would only be able to support AWS resources.
 
 ## 3rd Party Web Apps
 
