@@ -61,6 +61,3 @@ For reach role that you are going to use, follow these steps:
 ## Contributors
 
 - Anthony Petecca @RealityShift
-- Padmakar Ojha @dvopsway
-- Kishan Madhesiya @kishanmadhesiya
-- Michael Amurjuev @LawTech Enthusiast
