@@ -56,8 +56,3 @@ For reach role that you are going to use, follow these steps:
 - Commit your changes: git commit -m 'feat: add new feature' -m 'add my-new-feature, use it as: my-new-feautre(args)' -m 'closes #26'
 - Push to the branch: git push origin my-new-feature
 - Submit a pull request :D
-
-
-## Contributors
-
-- Anthony Petecca @RealityShift
