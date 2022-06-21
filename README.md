@@ -8,9 +8,9 @@ Many startups are now using AWS infrastructure for their company, but being new 
 
 This project focuses on creating a skeleton of IAM roles for startups or any company moving to AWS. This provides the company with the ability to get started with little or no modifications. For new companies (and even old companies), time is money. The less time you need to spend setting up permissions structures in AWS, the more money you have to build your company in other ways. We are here to help. The project focuses on multi-size startup companies:
 
-- Small - 5 people
-- Midsize - ~12 people
-- Large - 40 or above
+- Startup - 5 people
+- SMB - ~12 people
+- Enterprise - 40 or above
 
 Follow Us On [![alt text][2.1]][2]
 
