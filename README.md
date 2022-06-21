@@ -10,7 +10,7 @@ This project focuses on creating a skeleton of IAM roles for startups or any com
 
 - Startup - 5 people
 - SMB - ~12 people
-- Enterprise - 40 or above
+- Enterprise - 40 and above
 
 Follow Us On [![alt text][2.1]][2]
 
